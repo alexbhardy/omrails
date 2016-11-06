@@ -1,0 +1,14 @@
+<div class="container">
+	<p>
+	  <strong>User:</strong>
+	  <%= @user_profile.user %>
+	</p>
+
+	<p>
+	  <strong>Content:</strong>
+	  <%= @user_profile.content %>
+	</p>
+
+	<%= link_to 'Edit', edit_user_profile_path(@user_profile) %> |
+	<%= link_to 'Back', user_profiles_path %>
+</div>

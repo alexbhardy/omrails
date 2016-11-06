@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
 
   # PATCH/PUT /tweets/1
   def update
-    @tweet = current_user.tweets.find(params[:id])
+    @tweet = Tweet.find(params[:id])
     if @tweet.update(tweet_params)
       redirect_to @tweet, notice: 'Tweet was successfully updated.'
     else
